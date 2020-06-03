@@ -7,29 +7,29 @@
     <table>
         <thead>
             <tr>
-                <td><center>ID</center></td>
-                <td><center>Nombre</center></td>
-                <td><center>Nacionalidad</center></td>
-                <td><center>Corriente</center></td>
-                <td><center>Imagen</center></td> 
+                <th><center>ID</center></th>
+                <th><center>Nombre</center></th>
+                <th><center>Nacionalidad</center></th>
+                <th><center>Corriente</center></th>
+                <th><center>Imagen</center></th> 
             </tr>
         </thead>
         <tbody>
         {{#each pintores}}
             <tr>
-                <td>{{_id}}</td>
-                <td>{{nombre}}</td>
-                <td>{{nacionalidad}}</td>
-                <td>{{corriente}}</td>0
-                <td><center><img width="25%" src="../images/{{pintura}}"></center></td>
+                <td><center>{{_id}}</center></td>
+                <td><center>{{nombre}}</center></td>
+                <td><center>{{nacionalidad}}</td>
+                <td><center>{{corriente}}</center></td>
+                <td><center><img width="25%" src="../images/{{pintura}}"><p>{{nompin}}</p></center></td>
             </tr>
         {{/each}}
         </tbody>
     </table>
     </center>
     {{else}}
-    <div>No hay pinches pintores</div>
+    <div>No hay pintores</div>
     {{/if}}
 </div>
-
+<br>
 {{>footer}}
