@@ -4,14 +4,14 @@
      <center>
     <h1>Pintores</h1>
     {{#if pintores}}
-    <table class="table table-dark table-hover">
+    <table>
         <thead>
             <tr>
-                <td>ID</td>
-                <td>Nombre</td>
-                <td>Nacionalidad</td>
-                <td>Corriente</td>
-                <td>Imagen</td>
+                <td><center>ID</center></td>
+                <td><center>Nombre</center></td>
+                <td><center>Nacionalidad</center></td>
+                <td><center>Corriente</center></td>
+                <td><center>Imagen</center></td> 
             </tr>
         </thead>
         <tbody>
@@ -21,7 +21,7 @@
                 <td>{{nombre}}</td>
                 <td>{{nacionalidad}}</td>
                 <td>{{corriente}}</td>0
-                <td><img width="25%" src="../images/{{pintura}}"></td>
+                <td><center><img width="25%" src="../images/{{pintura}}"></center></td>
             </tr>
         {{/each}}
         </tbody>
